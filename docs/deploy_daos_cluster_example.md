@@ -19,7 +19,7 @@ Clone the [daos-stack/google-cloud-daos](https://github.com/daos-stack/google-cl
 
 ```bash
 cd ~/
-git clone https://github.com/daos-stack/google-cloud-daos.git
+git clone https://github.com/mark-olson/google-cloud-daos.git
 cd ~/google-cloud-daos/terraform/examples/daos_cluster
 ```
 
