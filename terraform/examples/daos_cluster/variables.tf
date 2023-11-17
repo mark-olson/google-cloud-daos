@@ -101,6 +101,12 @@ variable "server_number_of_instances" {
   type        = number
 }
 
+variable "server_tags" {
+  description = "Set of key/value label pairs to assign to daos-server instances"
+  type        = list(any)
+  default     = ["daos-server", "allow-my-ip"]
+}
+
 variable "server_daos_disk_count" {
   description = "Number of local ssd's to use"
   default     = 16
@@ -219,6 +225,12 @@ variable "client_number_of_instances" {
   description = "Number of daos clients to bring up"
   default     = 16
   type        = number
+}
+
+variable "client_tags" {
+  description = "Set of key/value label pairs to assign to daos-client instances"
+  type        = list(any)
+  default     = ["daos-client", "allow-my-ip"]
 }
 
 variable "client_service_account" {
